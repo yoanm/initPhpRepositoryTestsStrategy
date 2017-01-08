@@ -1,6 +1,6 @@
 # initPhpRepositoryTestsStrategy
 
-> *Implementations are compliant to this* **[Tests strategy](https://github.com/yoanm/Readme/blob/master/README.md#tests-strategy)**
+> *Implementations are compliant to this* **[Tests strategy](https://github.com/yoanm/Readme/blob/master/TESTS_STRATEGY.md)**
 
 Command to initialize tests strategy for a php repository
 
