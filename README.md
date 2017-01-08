@@ -8,4 +8,4 @@ You can use following implementations :
 * [PhpUnit implementations](https://github.com/yoanm/initRepositoryWithPhpUnit)
 * [Behat implementations](https://github.com/yoanm/initRepositoryWithBehat)
 
-This [Composer implementation](https://github.com/yoanm/Readme/blob/master/TESTS_STRATEGY.md#example-composer-implementation) is **required** (See [Tests strategy rule - base namespace](https://github.com/yoanm/Readme/blob/master/TESTS_STRATEGY.md#base-namespace))
+This [Composer implementation](https://github.com/yoanm/intRepositoryWithComposer) is **required** (See [Tests strategy rule - base namespace](https://github.com/yoanm/Readme/blob/master/TESTS_STRATEGY.md#base-namespace))
