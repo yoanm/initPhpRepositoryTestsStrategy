@@ -5,7 +5,7 @@
 Command to initialize tests strategy for a php repository
 
 You can use following frameworks : 
-* [PhpUnit](./doc/PHPUNIT_IMPLEMENTATION.md)
+* [PhpUnit](https://github.com/yoanm/initRepositoryWithPhpUnit)
 * [Behat]()
 
 You need following composer implementation (See [Tests strategy rule - base namespace](https://github.com/yoanm/Readme/blob/master/TESTS_STRATEGY.md#base-namespace))
