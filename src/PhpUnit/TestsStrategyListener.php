@@ -16,21 +16,19 @@ namespace Yoanm\InitPhpRepositoryTestsStrategy\PhpUnit;
  */
 class TestsStrategyListener extends \PHPUnit_Framework_BaseTestListener
 {
-    public function __construct()
-    {
-        var_dump("CONSTRUCT");
-    }
-
+    /**
+     * @param \PHPUnit_Framework_Test $test
+     * @param \Exception              $e
+     * @param float                   $time
+     */
     public function addRiskyTest(\PHPUnit_Framework_Test $test, \Exception $e, $time)
     {
-        var_dump("OK");
         /* Must be PHPUnit_Framework_TestCase instance to have access tp "getTestResultObject" method */
         if ($test instanceof \PHPUnit_Framework_TestCase) {
             $testResult = $test->getTestResultObject();
             switch (true) {
                 /* beStrictAboutOutputDuringTests */
                 case $e instanceof \PHPUnit_Framework_OutputError:
-                    var_dump("OUTPUT");
                     $reason = 'No output during test';
                     /** Ack - remove coverage */
                     $this->removeCoverageFor($test);
@@ -55,7 +53,7 @@ class TestsStrategyListener extends \PHPUnit_Framework_BaseTestListener
                         $e->getMessage()
                     )
                 ),
-                microtime(true) - \PHP_Timer::$requestTime
+                $time
             );
         }
     }
